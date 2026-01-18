@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: research-app
+    env: node
+    root: backend
+    branch: main
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: CROSSREF_MAILTO
+        value: you@example.com

@@ -1,0 +1,15 @@
+{
+  "name": "research-table-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "setup-frontend": "npx @angular/cli@16 new frontend --routing=false --style=css --skip-git --skip-install",
+    "install-frontend-deps": "cd frontend && npm install && npm install @angular/material @angular/cdk @angular/animations",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npx ng serve",
+    "dev": "concurrently \"npm:backend\" \"npm:frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
