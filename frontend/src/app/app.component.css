@@ -37,13 +37,44 @@ mat-card {
   flex: 1;
 }
 
+.actions-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 8px 0 12px 0;
+}
+
 .current-query {
   margin: 8px 0 16px 0;
   color: rgba(0,0,0,0.7);
 }
 
+.spacer {
+  flex: 1;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
 table {
   width: 100%;
+  min-width: 720px;
+  table-layout: auto;
+}
+
+td {
+  word-break: break-word;
+}
+
+.mat-column-title { min-width: 220px; }
+.mat-column-authors { min-width: 180px; }
+.mat-column-journal { min-width: 160px; }
+.mat-column-doi button {
+  white-space: normal;
+  text-align: left;
 }
 
 .spinner {
