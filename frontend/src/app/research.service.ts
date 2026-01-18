@@ -5,7 +5,7 @@ import { SearchResult } from './models';
 
 @Injectable({ providedIn: 'root' })
 export class ResearchService {
-  private api = 'http://localhost:3000/api';
+  private api = '/api';
 
   constructor(private http: HttpClient) {}
 
